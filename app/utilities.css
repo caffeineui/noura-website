@@ -1,0 +1,72 @@
+/* Utility Classes */
+.container {
+  width: 100%;
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-inline: var(--spacer-medium);
+}
+
+.containerSmall {
+  max-width: 52rem;
+}
+
+.containerMedium {
+  max-width: 90rem;
+}
+
+.paddingGlobal {
+  padding-inline: var(--fixed-3rem);
+}
+
+.paddingSectionMedium {
+  padding-block-start: var(--section-medium);
+}
+
+.textAlignCenter {
+  text-align: center;
+}
+
+.hideTablet {
+  display: block;
+}
+
+.hideMobile {
+  display: block;
+}
+
+/* Animation classes */
+.animateIn {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .paddingGlobal {
+    padding-inline: var(--fixed-2-25rem);
+  }
+
+  .hideTablet {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .paddingGlobal {
+    padding-inline: var(--fixed-1-5rem);
+  }
+
+  .hideMobile {
+    display: none;
+  }
+}

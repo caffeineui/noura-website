@@ -1,0 +1,97 @@
+.button {
+  border-radius: var(--fixed-1-5rem);
+  background-color: var(--colors-primary-black);
+  color: #fff;
+  font-size: var(--fixed-1rem);
+  font-weight: var(--typography-font-weight-medium);
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+  text-decoration: none;
+}
+
+.button:active {
+  transform: translate(0, 2px);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.buttonInner {
+  padding: var(--fixed-1-5rem) var(--fixed-2rem);
+  transition: box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 7px rgba(255, 255, 255, 0.28);
+}
+
+.buttonInner:hover {
+  box-shadow: inset 0 0 7px rgba(255, 255, 255, 0.6);
+}
+
+.buttonText {
+  z-index: 5;
+  position: relative;
+}
+
+.buttonGradient {
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 12px;
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.3s ease;
+}
+
+.button:hover .buttonGradient {
+  opacity: 1;
+}
+
+.gradientBall {
+  filter: blur(20px);
+  mix-blend-mode: overlay;
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+}
+
+.gradientBallOne {
+  background: linear-gradient(to right, #fd3846, #ffd000);
+  bottom: 0;
+  left: 0;
+}
+
+.gradientBallTwo {
+  background: linear-gradient(78deg, #a600ff, #2bff00);
+  bottom: 0;
+  left: 50%;
+}
+
+/* Variant styles */
+.secondary {
+  color: var(--colors-primary-black);
+  background: linear-gradient(#f2f1ed, #dddbd1);
+}
+
+.small {
+  border-radius: var(--fixed-1rem);
+  font-size: var(--fixed-0-875rem);
+}
+
+.small .buttonInner {
+  padding: var(--fixed-1rem) var(--fixed-1-5rem);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 767px) {
+  .button {
+    border-radius: var(--fixed-1-25rem);
+  }
+
+  .buttonInner {
+    padding: var(--fixed-1-25rem) var(--fixed-1-75rem);
+  }
+}

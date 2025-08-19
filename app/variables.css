@@ -1,0 +1,128 @@
+:root {
+  /* Colors */
+  --colors-primary-beige: #f8f7f3;
+  --colors-primary-black: #000;
+  --colors-primary-white: #fff;
+  --colors-grey-100: #ddd;
+  --colors-grey-200: #b6b6b6;
+  --colors-grey-300: #6b6b6b;
+  --colors-grey-400: #474747;
+  --colors-grey-500: #333;
+  --colors-grey-600: #292929;
+  --colors-grey-700: #171717;
+  --colors-grey-800: #0f0f0f;
+  --colors-grey-900: #0a0a0a;
+
+  /* Typography */
+  --typography-font-family-primary: "BDO Grotesk", Arial, sans-serif;
+  --typography-font-family-secondary: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --typography-font-family-detail: "Roboto Mono", Arial, sans-serif;
+
+  /* Font Weights */
+  --typography-font-weight-thin: 100;
+  --typography-font-weight-extra-light: 200;
+  --typography-font-weight-light: 300;
+  --typography-font-weight-regular: 400;
+  --typography-font-weight-medium: 500;
+  --typography-font-weight-semibold: 600;
+  --typography-font-weight-bold: 700;
+  --typography-font-weight-extra-bold: 800;
+  --typography-font-weight-black: 900;
+
+  /* Fixed Sizes */
+  --fixed-0rem: 0rem;
+  --fixed-0-125rem: 0.125rem;
+  --fixed-0-25rem: 0.25rem;
+  --fixed-0-5rem: 0.5rem;
+  --fixed-0-75rem: 0.75rem;
+  --fixed-0-875rem: 0.875rem;
+  --fixed-1rem: 1rem;
+  --fixed-1-125rem: 1.125rem;
+  --fixed-1-25rem: 1.25rem;
+  --fixed-1-5rem: 1.5rem;
+  --fixed-1-75rem: 1.75rem;
+  --fixed-2rem: 2rem;
+  --fixed-2-25rem: 2.25rem;
+  --fixed-2-5rem: 2.5rem;
+  --fixed-2-75rem: 2.75rem;
+  --fixed-3rem: 3rem;
+  --fixed-3-5rem: 3.5rem;
+  --fixed-4rem: 4rem;
+  --fixed-4-5rem: 4.5rem;
+  --fixed-5rem: 5rem;
+  --fixed-6rem: 6rem;
+  --fixed-8rem: 8rem;
+  --fixed-9rem: 9rem;
+  --fixed-10rem: 10rem;
+  --fixed-12rem: 12rem;
+  --fixed-13rem: 13rem;
+
+  /* Typography Scale */
+  --typography-h1-font-size: var(--fixed-6rem);
+  --typography-h1-line-height: 100%;
+  --typography-h1-font-weight: var(--typography-font-weight-medium);
+  --typography-h1-letter-spacing: -0.02em;
+
+  --typography-h2-font-size: var(--fixed-5rem);
+  --typography-h2-line-height: 100%;
+  --typography-h2-font-weight: var(--typography-font-weight-medium);
+  --typography-h2-letter-spacing: -0.02em;
+
+  /* Spacing System */
+  --spacer-tiny: var(--fixed-0-125rem);
+  --spacer-xxsmall: var(--fixed-0-25rem);
+  --spacer-xsmall: var(--fixed-0-5rem);
+  --spacer-small: var(--fixed-1rem);
+  --spacer-medium: var(--fixed-2rem);
+  --spacer-large: var(--fixed-3rem);
+  --spacer-xlarge: var(--fixed-4rem);
+  --spacer-xxlarge: var(--fixed-5rem);
+  --spacer-huge: var(--fixed-6rem);
+  --spacer-xhuge: var(--fixed-8rem);
+  --spacer-xxhuge: var(--fixed-12rem);
+
+  /* Border Radius */
+  --border-radius-tiny: var(--fixed-0-125rem);
+  --border-radius-xxsmall: var(--fixed-0-25rem);
+  --border-radius-xsmall: var(--fixed-0-5rem);
+  --border-radius-small: var(--fixed-0-75rem);
+  --border-radius-medium: var(--fixed-1rem);
+  --border-radius-large: var(--fixed-1-125rem);
+  --border-radius-xlarge: var(--fixed-1-25rem);
+  --border-radius-xxlarge: var(--fixed-1-5rem);
+  --border-radius-huge: var(--fixed-1-75rem);
+  --border-radius-xhuge: var(--fixed-2rem);
+  --border-radius-xxhuge: var(--fixed-2-5rem);
+  --border-radius-ultra: var(--fixed-3rem);
+
+  /* Section Spacing */
+  --section-xsmall: var(--fixed-4rem);
+  --section-small: var(--fixed-6rem);
+  --section-medium: var(--fixed-8rem);
+  --section-large: var(--fixed-10rem);
+  --section-xlarge: var(--fixed-12rem);
+  --section-xxlarge: var(--fixed-13rem);
+}
+
+/* Responsive Variables */
+@media screen and (max-width: 991px) {
+  :root {
+    --typography-h1-font-size: var(--fixed-5rem);
+    --typography-h2-font-size: var(--fixed-4rem);
+    --section-medium: var(--fixed-7rem);
+    --section-large: var(--fixed-8rem);
+    --section-xxlarge: var(--fixed-10rem);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+    --typography-h1-font-size: var(--fixed-3rem);
+    --typography-h2-font-size: var(--fixed-2-5rem);
+    --section-medium: var(--fixed-5rem);
+    --section-large: var(--fixed-5rem);
+    --section-xxlarge: var(--fixed-5rem);
+    --spacer-medium: var(--fixed-1-5rem);
+  }
+}

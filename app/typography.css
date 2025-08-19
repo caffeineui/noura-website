@@ -1,0 +1,36 @@
+/* Typography Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--typography-font-family-primary);
+  margin: 0;
+  font-weight: var(--typography-font-weight-medium);
+}
+
+h1 {
+  font-size: var(--typography-h1-font-size);
+  line-height: var(--typography-h1-line-height);
+  letter-spacing: var(--typography-h1-letter-spacing);
+}
+
+h2 {
+  font-size: var(--typography-h2-font-size);
+  line-height: var(--typography-h2-line-height);
+  letter-spacing: var(--typography-h2-letter-spacing);
+}
+
+p {
+  margin: 0;
+  font-family: var(--typography-font-family-secondary);
+}
+
+.text-detail {
+  font-family: var(--typography-font-family-detail);
+  font-size: var(--fixed-0-875rem);
+  font-weight: var(--typography-font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
